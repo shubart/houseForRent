@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="2946dp"
+        android:id="@+id/scrollView1"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/scrollView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70be5e"
+                android:baselineAligned="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="  Home    "
+                    android:id="@+id/S_Hometv"
+                    android:textSize="14dp"
+                    android:background="#70be5e"
+                    android:onClick="onGreenTabClickHome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/S_abouttv"
+                    android:textSize="14dp"
+                    android:text="About     "
+                    android:background="#70be5e"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClickAbout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Contact     "
+                    android:id="@+id/S_contacttv"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClickContact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Messages    "
+                    android:id="@+id/S_Messagestv"
+                    android:onClick="onGreenTabClickMessages"
+                    android:clickable="true"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="BACK"
+                    android:id="@+id/S_Backtv"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:onClick="onGreenTabClickSBACK"
+                    android:textColor="#0b12aa" />
+
+            </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Available Houses"
+        android:id="@+id/textView7"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:typeface="sans"
+        android:background="#e4ddf0"
+        android:textColor="#f24813"
+        android:layout_weight="5.88"
+        android:paddingTop="3dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView16"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="5.88"
+                android:textSize="7dp" />
+
+
+            <ListView
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:id="@+id/listViewTen"
+        android:layout_alignParentBottom="true"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:background="#99bdf2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp"
+                android:layout_weight="4" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

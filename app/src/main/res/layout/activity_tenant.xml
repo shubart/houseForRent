@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.myapplication.Tenant">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="2946dp"
+        android:id="@+id/scrollView1"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/scrollView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#70be5e"
+        android:baselineAligned="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="  Home    "
+            android:id="@+id/landlordHometv"
+            android:onClick="tenantButtons"
+            android:clickable="true"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Welcome   "
+            android:id="@+id/textView14"
+            android:textSize="14dp"
+            android:background="#70be5e" />
+
+        <TextView
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tenantNameTV"
+            android:textSize="14dp"
+            android:text="Guest"
+            android:background="#70be5e"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Login  "
+            android:id="@+id/Tlogintv"
+            android:textSize="14dp"
+            android:typeface="sans"
+            android:textColor="#2e38f9"
+            android:onClick="tenantButtons" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Tlogouttv"
+            android:textSize="14dp"
+            android:background="#70be5e"
+            android:typeface="sans"
+            android:textColor="#2e38f9"
+            android:onClick="tenantButtons" />
+
+    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Are you searching for a house?"
+                android:paddingBottom="1dp"
+                android:id="@+id/textView_zoom"
+                android:textColor="#f24813"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:textSize="17dp"
+                android:singleLine="true" />
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Search According to:"
+            android:id="@+id/textView10"
+            android:textSize="17dp"
+            android:textStyle="italic"
+            android:typeface="sans"
+            android:background="#e4ddf0"
+            android:textColor="#f24813" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="0.5dp"
+            android:background="#99bdf2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Category   :"
+                android:textStyle="bold"
+                android:id="@+id/thftvv"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="    "
+                android:id="@+id/texlew13" />
+
+            <EditText
+                android:id="@+id/thousefortv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:ems="10"
+                android:drawableRight="@drawable/drop"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView23333"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:text="Any" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="0.5dp"
+            android:background="#99bdf2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Province  :"
+                android:textStyle="bold"
+                android:id="@+id/prvttvv"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="     "
+                android:id="@+id/ptView13" />
+
+            <EditText
+                android:id="@+id/tprovincetv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:ems="10"
+                android:drawableRight="@drawable/drop"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView23333"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:text="Any" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="0.5dp"
+            android:background="#99bdf2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Town      :"
+                android:textStyle="bold"
+                android:id="@+id/textView11"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="       "
+                android:id="@+id/tew13" />
+
+            <EditText
+                android:id="@+id/ttowntv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:ems="10"
+                android:drawableRight="@drawable/drop"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView23333"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:text="Any" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="0.5dp"
+            android:background="#99bdf2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Area       : "
+                android:textStyle="bold"
+                android:id="@+id/tareatvv"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="       "
+                android:id="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/tareatv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:ems="10"
+                android:drawableRight="@drawable/drop"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView23333"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:text="Any" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingLeft="2.5dp"
+            android:paddingBottom="0.5dp"
+            android:background="#99bdf2" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Price Range :"
+                android:textStyle="bold"
+                android:id="@+id/tpratvv"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/tpricetv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:ems="10"
+                android:drawableRight="@drawable/drop"
+                android:textAlignment="center"
+                android:layout_below="@+id/textView23333"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:text="Any" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5e5c5c">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:drawableRight="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:id="@+id/searchButton"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="tenantButtons" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:paddingBottom="1dp"
+                android:id="@+id/textView19"
+                android:textColor="#f24813"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#f9f5f5" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make a Request"
+                android:id="@+id/textVie"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_below="@+id/listViewTen"
+                android:typeface="sans"
+                android:background="#e4ddf0"
+                android:textColor="#f24813"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="( please describe what you are looking for)"
+                android:id="@+id/textView101"
+                android:textSize="13dp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:background="#e4ddf0"
+               />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingLeft="2.5dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Category :"
+                    android:textStyle="bold"
+                    android:id="@+id/textView1331"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="    "
+                    android:id="@+id/tex3" />
+
+                <EditText
+                    android:id="@+id/requestHfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/drop"
+                    android:textColorHint="#fcfefc"
+                    android:hint="rent / hire /sale /boarding?"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/requestHfor"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingLeft="2.5dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Town  :"
+                    android:textStyle="bold"
+                    android:id="@+id/texttoww11"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="     "
+                    android:id="@+id/texttownVi13" />
+
+                <EditText
+                    android:id="@+id/requestTowntv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView23333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingLeft="2.5dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Province  :"
+                    android:textStyle="bold"
+                    android:id="@+id/textw11"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="     "
+                    android:id="@+id/textVi13" />
+
+                <EditText
+                    android:id="@+id/requestProvincetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:drawableRight="@drawable/drop"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView23333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingLeft="2.5dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Price range: K"
+                    android:textStyle="bold"
+
+                    android:id="@+id/pricetextw11"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="     "
+                    android:id="@+id/textprVi13" />
+
+                <EditText
+                    android:id="@+id/requestPricetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColorHint="#fcfefc"
+                    android:hint=" What can you pay ?"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView23333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingLeft="2.5dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Contact  :"
+                    android:textStyle="bold"
+
+                    android:id="@+id/pricetcextw11"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="     "
+                    android:id="@+id/textcrVi13" />
+
+                <EditText
+                    android:id="@+id/requestContacttv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColorHint="#fcfefc"
+                    android:hint="phone number?"
+                    android:ems="10"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/textView23333"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="0.5dp"
+                android:paddingLeft="2.5dp"
+                android:background="#99bdf2" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:id="@+id/descript"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="       "
+                    android:id="@+id/textView13e" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textSize="13dp"
+                    android:ems="10"
+                    android:hint="Add more details about the house you want"
+                    android:textColorHint="#fcfefc"
+                    android:id="@+id/requestDescriptiontv"
+                    android:onClick="tenantButtons"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a2c2431b"  >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send Request"
+                    android:id="@+id/requestBtn"
+                    android:drawableRight="@drawable/abc_ic_go_search_api_mtrl_alpha"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="tenantButtons" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:paddingBottom="0.5dp"
+                android:background="#99bdf2"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/textVisew7"
+                    android:textAlignment="center"
+                    android:textSize="9dp"
+                    android:typeface="sans"
+                    android:background="#e4ddf0"
+                    android:layout_weight="1.09"
+                    android:text="  " />
+            </LinearLayout>
+
+
+        </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

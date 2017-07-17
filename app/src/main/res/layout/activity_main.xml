@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.myapplication.MainActivity"
+    android:background="#f6efef">
+
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingBottom="1.5dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="1.5dp"
+                    android:weightSum="1"
+                    android:background="#99bdf2"
+                    android:id="@+id/linearLayout3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.95"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Ndine Apps"
+                            android:textStyle="bold"
+                            android:id="@+id/textView5"
+                            android:background="#99bdf2"
+                            android:layout_weight="0.95"
+                            android:typeface="serif"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="41dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-HouseForRent-"
+                            android:id="@+id/textView6"
+                            android:layout_weight="0.95"
+                            android:textStyle="italic"
+                            android:textAlignment="center"
+                            android:textColor="#932e2e"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="17dp"
+                            android:background="#e4ddf0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="( the creative and inovative me )"
+                            android:id="@+id/textView"
+                            android:textSize="12dp"
+                            android:layout_below="@+id/textView5"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/nd2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70be5e"
+                android:baselineAligned="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="  Home     "
+                    android:id="@+id/M_Hometv"
+                    android:textSize="14dp"
+                    android:background="#70be5e"
+                    android:onClick="onGreenTabClickHome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/M_abouttv"
+                    android:textSize="14dp"
+                    android:text="About    "
+                    android:background="#70be5e"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClickAbout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Contact    "
+                    android:id="@+id/M_contacttv"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClickContact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Messages  "
+                    android:id="@+id/M_Messages"
+                    android:onClick="onGreenTabClickMessages"
+                    android:clickable="true"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Login"
+                    android:id="@+id/loginbtn"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:onClick="onClick"
+                    android:textColor="#0b12aa" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Latest House Posts"
+                android:textStyle="bold"
+                android:id="@+id/textView4"
+                android:textSize="17dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="1dp"
+                android:paddingBottom="0.5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#99bdf2">
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="169dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fcf9f9"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:smoothScrollbar="true"
+                        android:isScrollContainer="true"
+                        android:nestedScrollingEnabled="true"
+                        android:visibility="visible">
+                    </ListView>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView12"
+                    android:text="  "
+                    android:background="#f6efef" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView1"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#f6efef">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:background="#f6efef">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="How it works"
+                            android:id="@+id/textView8"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="   With House ForRent: You can search  for a house you would like to hire or rent in   Zambia. Also  Landlords can POST a House for  Potental Tennants to see.."
+                            android:id="@+id/textView9"
+                            android:textStyle="italic"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="11dp"
+                            android:layout_weight="3.31"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Create Account"
+                            android:textAllCaps="false"
+                            android:id="@+id/creatacountbtn"
+                            android:background="#c2d1ed"
+                            android:textSize="17dp"
+                            android:onClick="onClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Landlord"
+                            android:id="@+id/landlordbtn"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#ab8b8b"
+                            android:textSize="17dp"
+                            android:onClick="onClick" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tenant"
+                            android:textAllCaps="false"
+                            android:id="@+id/tenantbtn"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#b7dcce"
+                            android:textSize="17dp"
+                            android:onClick="onClick" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:id="@+id/textView21"
+                            android:layout_weight="0.64" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

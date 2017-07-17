@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="90dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/home"
+            android:layout_height="match_parent"
+            android:id="@+id/ivHouse"
+          />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:textAlignment="center"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hforv"
+                android:id="@+id/hosfortv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/ivHouse"
+                android:textSize="14dp"
+                android:textColor="#262d85" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="price"
+                android:id="@+id/pricetv"
+                android:textColor="#e55f5f"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/locaTv"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/hosfortv"
+                android:layout_toRightOf="@id/ivHouse"
+                android:layout_toEndOf="@id/ivHouse"
+                android:textColor="#666"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="descripTv"
+                android:id="@+id/textType"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/locaTv"
+                android:layout_toRightOf="@id/ivHouse"
+                android:textColor="#666"
+                android:textSize="13dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:textStyle="italic"
+                android:id="@+id/Tsl_datetv"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#b7cab2">
+
+    </LinearLayout>
+
+</LinearLayout>

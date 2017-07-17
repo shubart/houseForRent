@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="7dp"
+    tools:context="com.example.dell.myapplication.ClickedHouse">
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99bdf2">
+
+            <LinearLayout
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                tools:context="{relativePackage}.${activityClass}"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#70be5e"
+                    android:baselineAligned="true">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Home   "
+                        android:id="@+id/L_Hometv"
+                        android:textSize="14dp"
+                        android:background="#70be5e"
+                        android:onClick="onGreenTabClickHome" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/L_abouttv"
+                        android:textSize="14dp"
+                        android:text="About     "
+                        android:background="#70be5e"
+                        android:typeface="sans"
+                        android:onClick="onGreenTabClickAbout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Contact   "
+                        android:id="@+id/L_contacttv"
+                        android:textSize="14dp"
+                        android:typeface="sans"
+                        android:onClick="onGreenTabClickContact" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=" Messages     "
+                        android:id="@+id/LO_Messagestv"
+                        android:onClick="onGreenTabClickMessages"
+                        android:clickable="true"
+                        android:textSize="14dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="BACK"
+                        android:id="@+id/SelecctedH_Backtv"
+                        android:textSize="14dp"
+                        android:typeface="sans"
+                        android:textStyle="bold"
+                        android:textColor="#0b12aa"
+                        android:onClick="onClickHouse" />
+
+                </LinearLayout>
+
+
+
+                <Gallery
+                    android:id="@+id/gallery1"
+                    android:layout_width="match_parent"
+                    android:outlineProvider="background"
+                    android:layout_height="73dp"
+                    android:animationDuration="1000"
+                    android:background="#f0ebeb" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="#99bdf2"
+                    android:id="@+id/ADverttv"
+                    android:textStyle="italic"
+                    android:layout_gravity="center_horizontal"
+                    android:text="(Space To Let)"
+                    android:typeface="serif"
+                    android:textSize="15dp" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="237dp"
+                    android:paddingTop="3dp"
+                    android:id="@+id/clicked_imageView"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="#d2cbcb" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:background="#fcf8f8"
+                android:textSize="0.5dp" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:paddingTop="3dp"
+                android:paddingLeft="3dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="About The House"
+                    android:id="@+id/textView10"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:typeface="sans"
+                    android:background="#e4ddf0"
+                    android:textColor="#d60835" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Category       :"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="188dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:id="@+id/housefortxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Province      :"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="189dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="provincetxt"
+                        android:id="@+id/provincetxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Town             :"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="191dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:id="@+id/TWNtxt"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="2.5dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Area              :"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="191dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:id="@+id/areatxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Price               :"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="195dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:id="@+id/pricetxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Views             :"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2323 Views"
+                        android:id="@+id/viewstxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Description :    "
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This is a 2 bedroomed house"
+                        android:id="@+id/descriptiontxt"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Post Date      :"
+                        android:textStyle="bold"
+                        android:id="@+id/tosttextView11" />
+
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2323 Views"
+                        android:id="@+id/postdatetxt"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Contact"
+                        android:id="@+id/textViw7"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:typeface="sans"
+                        android:background="#e4ddf0"
+                        android:textColor="#d60835"
+                        android:layout_weight="1.09" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2.5dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Contact Name:"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="       "
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:textAlignment="center"
+                        android:id="@+id/cnametxt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="2.5dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Phone Number"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="       "
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:textAlignment="center"
+                        android:id="@+id/cphonetxt" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:paddingLeft="2.5dp"
+                    android:background="#99bdf2" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Email Address :"
+                        android:textStyle="bold"
+                        android:id="@+id/textView11" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="       "
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Rent"
+                        android:textAlignment="center"
+                        android:id="@+id/emailtxt" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView7"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:typeface="sans"
+                        android:background="#e4ddf0"
+                        android:textColor="#d60835"
+                        android:layout_weight="1.09" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="0.5dp"
+                    android:background="#99bdf2"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Map"
+                        android:id="@+id/mapbutton"
+                        android:layout_alignBottom="@+id/scrollView"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_weight="0.34"
+                        android:onClick="onClickHouse" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reserve"
+                        android:id="@+id/reservebutton"
+                        android:layout_alignTop="@+id/reservebutton"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.34"
+                        android:onClick="onClickHouse" />
+
+                    <Button
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:id="@+id/clickedHouseBackButton"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/scrollView"
+                        android:layout_alignEnd="@+id/scrollView"
+                        android:layout_weight="0.34"
+                        android:onClick="onClickHouse" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

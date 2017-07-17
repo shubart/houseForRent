@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.myapplication.Register">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Registration Form"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="#99bdf2"
+                android:textAlignment="center"
+                android:textColor="#f9f4f4"
+                android:layout_weight="0.19"
+                android:allowUndo="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=""
+                android:layout_height="wrap_content"
+                android:background="#99bdf2" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#70be5e"
+                android:baselineAligned="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=" Home     "
+                    android:id="@+id/R_Hometv"
+                    android:textSize="14dp"
+                    android:background="#70be5e"
+                    android:onClick="onGreenTabClickrHome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/R_abouttv"
+                    android:textSize="14dp"
+                    android:text="About    "
+                    android:background="#70be5e"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClicrkAbout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Contact    "
+                    android:id="@+id/R_contacttv"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:onClick="onGreenTabClickrContact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Messages    "
+                    android:id="@+id/R_Messagetv"
+                    android:onClick="onGreenTabClickrMessages"
+                    android:clickable="true"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Login"
+                    android:id="@+id/R_logintxt"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:textStyle="bold"
+                    android:onClick="onGreenTabClickrCLogin"
+                    android:textColor="#0b12aa"
+                    android:nestedScrollingEnabled="true" />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Enter Email Address or PhoneNumber"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/newemail"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Enter password"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12" />
+            <EditText
+                android:id="@+id/new_user_Pass"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Enter  First Name"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/new_user_fname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Enter Last name"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/new_user_lname"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Home Address"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerAddress" />
+            <EditText
+                android:id="@+id/new_user_town"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Enter Phone Number"
+                android:layout_height="wrap_content"
+                />
+            <EditText
+                android:id="@+id/new_user_phone"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19">
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.19"
+                    android:weightSum="1"
+                    android:background="#b7dcce">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Gender"
+                        android:id="@+id/textView18"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:allowUndo="true" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.19"
+                        android:weightSum="1">
+
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:id="@+id/maleCkB"
+                            android:checked="false"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:background="#b7dcce"
+                            android:layout_weight="0.24" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textStyle="bold"
+                            android:id="@+id/femaleCkB"
+                            android:checked="false"
+                            android:textSize="10dp"
+                            android:layout_weight="0.29"
+                            android:background="#b7dcce" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.19"
+                    android:weightSum="1"
+                    android:background="#ab7b8b">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="User Role"
+                        android:id="@+id/textView20"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.19"
+                        android:weightSum="1">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tenant"
+                            android:textStyle="bold"
+                            android:id="@+id/tenantCkB"
+                            android:checked="false"
+                            android:textSize="10dp"
+                            android:layout_weight="0.15" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Landlord"
+                            android:textStyle="bold"
+                            android:id="@+id/landlordCkB"
+                            android:checked="false"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView22"
+                android:layout_weight="0.24"
+                android:textSize="0.15dp" />
+
+            <Button
+                android:id="@+id/registerUserButton"
+                android:layout_width="match_parent"
+                android:text="Create Account"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:onClick="registerUser"
+                android:background="#b9d1f7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
